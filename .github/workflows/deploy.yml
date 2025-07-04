@@ -11,4 +11,6 @@ jobs:
       with:
         python-version: 3.x
     - run: pip install "mkdocs>=1.6.1,<2.0.0" "mkdocs-material[imaging]>=9.6.15,<10.0.0"
+    - run: mkdocs build
+    - run: echo "aarish.co" > site/CNAME
     - run: mkdocs gh-deploy --force

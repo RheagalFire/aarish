@@ -5,6 +5,10 @@ repo_url: https://github.com/rheagalfire
 repo_name: rheagalfire
 site_author: Aarish Alam
 
+# This is important - it copies CNAME to the build output
+extra_files:
+  - CNAME
+  
 theme:
   name: material
   palette:
