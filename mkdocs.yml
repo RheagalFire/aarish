@@ -1,0 +1,102 @@
+site_name: Aarish Alam | AI Engineer
+site_description: AI Engineer working on Scaling Solutions for Search and Chat Experience
+site_url: https://rheagalfire.github.io/
+repo_url: https://github.com/rheagalfire
+repo_name: rheagalfire
+site_author: Aarish Alam
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - toc.follow
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home:
+    - Overview: index.md
+    - About: about.md
+    - Projects: projects.md
+  - Experience: experience.md
+  - Speaking: speaking.md
+  - Writing:
+    - Overview: writing.md
+    - Categories:
+      - AI Engineering: writing/category/ai-engineering.md
+      - Search & Retrieval: writing/category/search-retrieval.md
+      - Enterprise Applications: writing/category/enterprise-applications.md
+    - Articles:
+      - Scalable Search Systems: writing/scalable-search-systems.md
+      - LLM-Gym Architecture: writing/llm-gym-architecture.md
+      - Transaction Tagging ML: writing/transaction-tagging-ml.md
+    - Archive:
+      - "2024": writing/archive/2024.md
+  - Contact: contact.md
+
+plugins:
+  - search
+  - social
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rheagalfire
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/aarish-alam
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/rheagalfire
+    - icon: fontawesome/regular/envelope
+      link: mailto:arishalam121@gmail.com
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mermaid.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
