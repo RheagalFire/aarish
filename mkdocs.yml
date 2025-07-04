@@ -35,8 +35,8 @@ theme:
     - content.code.select
     - toc.follow
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: IBM Plex Sans
+    code: IBM Plex Mono
 
 nav:
   - Home:
