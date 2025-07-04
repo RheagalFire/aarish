@@ -14,7 +14,7 @@ The system implements a three-layer orchestration pattern combining hybrid searc
 ---
 
 ### [Scaling Transaction Tagging: From Rules to ML at 10M+ Transactions](../transaction-tagging-ml.md)
-*October 2024 • 10 min read*
+*December 2024 • 10 min read*
 
 Building intelligent financial systems requires solving complex data challenges at scale. This article explores the architecture and implementation of an automated transaction tagging system that processes over 10 million transactions, transitioning from rule-based approaches to sophisticated ML pipelines.
 

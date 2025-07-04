@@ -3,7 +3,7 @@
 Articles about search technologies, vector databases, and information retrieval systems.
 
 ### [Building Scalable Search Systems with Vector Databases](../scalable-search-systems.md)
-*December 2024 • 8 min read*
+*March 2025 • 8 min read*
 
 As AI-powered applications become more prevalent, the need for scalable search systems has never been greater. This article explores the architecture patterns and best practices for building search systems that can handle millions of users while maintaining sub-second response times.
 

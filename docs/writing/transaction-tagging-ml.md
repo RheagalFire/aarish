@@ -311,55 +311,6 @@ def evaluate_model_performance(predictions, ground_truth):
     return metrics
 ```
 
-## Production Deployment
-
-### Model Serving Infrastructure
-
-```python
-class TransactionTaggingService:
-    def __init__(self):
-        self.rule_engine = LexicalRuleEngine()
-        self.f1_tagger = F1TaggingEngine(vector_db)
-        self.ml_categorizer = TransactionCategorizer()
-        
-    async def tag_transaction(self, transaction):
-        # Stage 1: Rule-based preprocessing
-        rule_result = self.rule_engine.apply_rules(transaction)
-        
-        if rule_result != 'unknown':
-            return rule_result
-            
-        # Stage 2: F1 learning-based tagging
-        f1_suggestion = await self.f1_tagger.suggest_tag(transaction)
-        
-        if f1_suggestion['confidence'] > 0.8:
-            return f1_suggestion['category']
-            
-        # Stage 3: ML-based categorization
-        ml_result = await self.ml_categorizer.categorize(transaction)
-        
-        return ml_result
-```
-
-## Key Learnings
-
-### 1. Hybrid Approach Works Best
-Combining rule-based, learning-based, and ML approaches provides robust categorization across diverse transaction types.
-
-### 2. User Behavior is Critical
-Learning from individual user tagging patterns significantly improves accuracy over generic models.
-
-### 3. Preprocessing is Everything
-Proper merchant name normalization and feature engineering are crucial for model performance.
-
-### 4. Scale Requires Architecture
-Processing millions of transactions demands careful consideration of batching, caching, and parallel processing.
-
-## Conclusion
-
-Building a scalable transaction tagging system requires a sophisticated multi-stage approach. The combination of lexical rules, intelligent F1 tagging, and ML-based categorization creates a robust pipeline capable of handling enterprise-scale financial data.
-
-The key success factors: thoughtful preprocessing, learning from user behavior, and designing for scale from day one.
 
 ---
 

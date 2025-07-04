@@ -3,7 +3,7 @@
 Technical deep-dives into AI system architecture and implementation patterns.
 
 ### [Building Hybrid Scalable Search Systems with Vector Databases](../scalable-search-systems.md)
-*December 2024 • 8 min read*
+*March 2025 • 8 min read*
 
 As AI-powered applications become more prevalent, the need for scalable search systems has never been greater. This article explores the architecture patterns and best practices for building search systems that can handle millions of users while maintaining sub-second response times.
 
@@ -14,7 +14,7 @@ Vector databases are specialized storage systems optimized for high-dimensional 
 ---
 
 ### [Scaling Transaction Tagging: From Rules to ML at 10M+ Transactions](../transaction-tagging-ml.md)
-*October 2024 • 10 min read*
+*December 2024 • 10 min read*
 
 Building intelligent financial systems requires solving complex data challenges at scale. This article explores the architecture and implementation of an automated transaction tagging system that processes over 10 million transactions, transitioning from rule-based approaches to sophisticated ML pipelines.
 
