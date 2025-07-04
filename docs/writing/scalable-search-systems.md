@@ -1,6 +1,6 @@
 # Building Scalable Search Systems with Vector Databases
 
-*Published: December 2024 • 8 min read*
+*Published: March 2025 • 8 min read*
 
 ## Introduction
 

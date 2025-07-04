@@ -1,6 +1,6 @@
 # Scaling Transaction Tagging: From Rules to ML at 10M+ Transactions
 
-*Published: October 2024 • 10 min read*
+*Published: December 2024 • 10 min read*
 
 ## Introduction
 
